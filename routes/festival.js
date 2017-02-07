@@ -8,9 +8,9 @@ var festivalSchema = require('../models/festivalSchema');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    festivalSchema.find({}, function (err, festivalData) {
-        console.log("festival view engine 연결 라우터 접근 ");
-        res.render('festivalView');
+        festivalSchema.find({}, function (err, festivalData) {
+            console.log("festival view engine 연결 라우터 접근 ");
+            res.render('festivalView');
         });
     }
 );
