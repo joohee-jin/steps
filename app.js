@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var comedb = require('./routes/comedb');
+var step2 = require('./routes/step2');
+var festival = require('./routes/festival');
 
 // load mongoose package
 var mongoose = require('mongoose');
@@ -17,7 +18,7 @@ mongoose.Promise = global.Promise;
 
 // connect to MongoDB
 mongoose.connect('mongodb://localhost/test')
-    .then(() =>  console.log('connection succesful'))
+    .then(() =>  console.log('connection successful'))
 .catch((err) => console.error(err));
 
 
@@ -37,7 +38,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/comedb',comedb);
+app.use('/step2',step2);
+app.use('/festival',festival);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

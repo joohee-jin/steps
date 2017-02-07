@@ -4,11 +4,11 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var testSchema = new Schema({
+var step2Schema = new Schema({
     _id:  String,
     msg: String
 });
 
-var test = mongoose.model('test', testSchema);
+var test = mongoose.model('test', step2Schema);
 
 module.exports=test;
