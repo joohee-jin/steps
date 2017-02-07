@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8"></meta>
+    <title>step4</title>
+
+    <!--
+    <link rel="stylesheet" href="/datatables/jquery.dataTables.min.css"></link>
+   <script src="/datatables/jquery.dataTables.min.js"></script>
+   <script src="/jquery/jquery-3.1.1.min.js"></script>
+   -->
+
+   <!--link css--><!--src는 js-->
+    <script src = "//code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel='stylesheet' href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />
+    <script src = "https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable( {
+                "ajax": {
+                    url : "http://localhost:8081/festival/info",
+                    dataSrc : ''
+                },
+                "columns": [
+                    { "data": "행사명" },
+                    { "data": "장소" },
+                    { "data": "행사내용" },
+                    { "data": "행사시작일자" },
+                    { "data": "행사종료일자" },
+                    { "data": "행사시간" },
+                    { "data": "요금정보" },
+                    { "data": "주관기관" },
+                    { "data": "주최기관" },
+                    { "data": "연락처" },
+                    { "data": "후원기관" },
+                    { "data": "객석수" },
+                    { "data": "관람요금" },
+                    { "data": "입장연령" },
+                    { "data": "할인정보" },
+                    { "data": "유의사항" },
+                    { "data": "홈페이지주소" },
+                    { "data": "예매정보" },
+                    { "data": "주차장보유여부" },
+                    { "data": "소재지도로명주소" },
+                    { "data": "소재지지번주소" },
+                    { "data": "경도(WGS84좌표)" },
+                    { "data": "위도(WGS84좌표)" },
+                    { "data": "데이터기준일자" }
+                ]
+            } );
+        } );
+    </script>
+
+ </head>
+
+
+ <body>
+
+ <table id="example" class="display" cellspacing="0" width="100%">
+     <thead>
+     <tr>
+         <th>행사명</th>
+         <th>장소</th>
+         <th>행사내용</th>
+         <th>행사시작일자</th>
+         <th>행사종료일자</th>
+         <th>행사시간</th>
+         <th>요금정보</th>
+         <th>주관기관</th>
+         <th>주최기관</th>
+         <th>연락처</th>
+         <th>후원기관</th>
+         <th>객석수</th>
+         <th>관람요금</th>
+         <th>입장연령</th>
+         <th>할인정보</th>
+         <th>유의사항</th>
+         <th>홈페이지주소</th>
+         <th>예매정보</th>
+         <th>주차장보유여부</th>
+         <th>소재지도로명주소</th>
+         <th>소재지지번주소</th>
+         <th>경도(WGS84좌표)</th>
+         <th>위도(WGS84좌표)</th>
+         <th>데이터기준일자</th>
+
+
+     </tr>
+     </thead>
+     <tfoot>
+     <tr>
+         <th>행사명</th>
+         <th>장소</th>
+         <th>행사내용</th>
+         <th>행사시작일자</th>
+         <th>행사종료일자</th>
+         <th>행사시간</th>
+         <th>요금정보</th>
+         <th>주관기관</th>
+         <th>주최기관</th>
+         <th>연락처</th>
+         <th>후원기관</th>
+         <th>객석수</th>
+         <th>관람요금</th>
+         <th>입장연령</th>
+         <th>할인정보</th>
+         <th>유의사항</th>
+         <th>홈페이지주소</th>
+         <th>예매정보</th>
+         <th>주차장보유여부</th>
+         <th>소재지도로명주소</th>
+         <th>소재지지번주소</th>
+         <th>경도(WGS84좌표)</th>
+         <th>위도(WGS84좌표)</th>
+         <th>데이터기준일자</th>
+     </tr>
+     </tfoot>
+ </table>
+
+ </body>
+
+ </html>
