@@ -15,28 +15,11 @@ var mongoose = require('mongoose');
 
 // Use native Node promises
 mongoose.Promise = global.Promise;
-
-
-var config = {
-    username:'irteamsu',
-    host:'10.110.240.32',
-    privateKey: require('fs').readFileSync('/home1/irteamsu/.ssh/id_rsa'),
-    port:22,
-    dstHost:'10.110.240.32',
-    dstPort:27017,
-    localHost:'127.0.0.1',
-    localPort: 27000
-};
-
-var tunnel = require('tunnel-ssh');
-tunnel(config, function (error, server) {
-    
     // connect to MongoDB
-    mongoose.connect('mongodb://localhost:27000/test')
+    mongoose.connect('mongodb://localhost:20000/test')
         .then(() => console.log('connection successful'))
         .catch((err) => console.error(err));
 
-});
 
 var app = express();
 
