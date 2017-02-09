@@ -60,9 +60,14 @@ app.use(function (err, req, res, next) {
     res.render('error');
 });
 
+if (app.get('env') ==='distribution'){
+    console.log("배포");
+    process.title='distribution';
+    process.env.PORT = 80;
+}
+
 // [CONFIGURE SERVER PORT]
 var port = process.env.PORT || 8081;
-
 module.exports = app;
 
 var server = app.listen(port, function () {
