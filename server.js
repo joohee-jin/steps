@@ -62,7 +62,6 @@ app.use(function (err, req, res, next) {
 if (app.get('env') ==='distribution'){
     console.log("배포");
     process.title='distribution';
-    process.env.PORT = 80;
 }
 
 // [CONFIGURE SERVER PORT]
