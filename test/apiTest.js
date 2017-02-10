@@ -5,13 +5,14 @@
 var chai = require('chai');
 var chaiHttp = require('chai-http');
 var should = chai.should();
-var server = require('../server');
+var server ='http://localhost:8081';
 
 chai.use(chaiHttp);
 
+
 describe('API Endpoint Test', () => {
     describe('GET request on /', () => {
-        it('should return hello world', (done) => {
+        it('should return 200', (done) => {
             chai.request(server)
                 .get('/')
                 .end((err, res) => {
