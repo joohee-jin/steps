@@ -15,8 +15,10 @@ cd /Users/Jmousy/Project/steps/build
 ls -al
 
 echo "---------remove some file to build---------"
-rm README.md .gitignore server.js festival.csv
+rm README.md .gitignore festival.csv
 rm -rf schellscript test .git shellscript
+#rm app.js
+
 ls -al
 echo "---------npm install-----------------------"
 npm install
