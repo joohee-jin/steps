@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd ~/steps
+cd home1/irteamsu/steps
 echo "---------content of this directory---------"
 ls -l
 echo "---------reset if build exist--------------"
@@ -8,10 +8,14 @@ ls -l
 
 echo "---------Now git clone---------------------"
 git clone https://github.com/joohee-jin/steps.git
+cd home1/irteamsu/steps
+pwd
 mv steps build
+pwd
+
 echo "---------now directory---------------------"
 pwd
-cd /Users/Jmousy/Project/steps/build
+cd home1/irteamsu/steps/build
 ls -al
 
 echo "---------remove some file to build---------"
@@ -25,6 +29,6 @@ npm install
 rm package.json
 
 echo "---------send directory 'build-------------"
-rsync -av -e ssh ~/steps/build irteamsu@10.110.241.148:build
+rsync -av -e ssh ~/steps/build irteamsu@10.110.241.148:home1/irteamsu
 
 echo "---------fin-------------------------------"
