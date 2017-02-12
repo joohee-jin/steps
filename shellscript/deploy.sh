@@ -3,6 +3,9 @@
 ssh irteamsu@10.110.241.148 'rm -rf ~/deploy_steps'
 ssh irteamsu@10.110.241.148 'sudo npm install pm2 -g'
 
+ssh irteamsu@10.110.243.28 'rm -rf ~/deploy_steps'
+ssh irteamsu@10.110.243.28 'sudo npm install pm2 -g'
+
 echo "-------------------------------------------Deploy the directory, build"
 echo "-------------------------------------------to Web Service Server 1"
 rsync -av -e ssh ~/steps/build irteamsu@10.110.241.148:/home1/irteamsu
