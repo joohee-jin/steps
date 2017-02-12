@@ -23,4 +23,8 @@ ls -al
 echo "---------npm install-----------------------"
 npm install
 rm pakage.json
+
+echo "---------send directory 'build-------------"
+rsync -av -e ssh ~/steps/build irteamsu@10.110.241.148:home1//irteamsu
+
 echo "---------fin-------------------------------"
