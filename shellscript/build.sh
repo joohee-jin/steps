@@ -3,7 +3,7 @@ cd ~/steps
 
 echo "-------------------------------------------content of this directory"
 ls -l
-echo "-------------------------------------------eset if build exist"
+echo "-------------------------------------------reset if build exist"
 rm -rf build
 ls -l
 
