@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 cd ~/steps
+
 echo "-------------------------------------------content of this directory"
 ls -l
 echo "-------------------------------------------eset if build exist"
@@ -27,8 +28,5 @@ ls -al
 echo "-------------------------------------------npm install"
 npm install
 rm package.json
-
-echo "-------------------------------------------send the data"
-rsync -av -e ssh ~/steps/festival.csv irteamsu@10.110.243.32:/home1/irteamsu
 
 echo "-------------------------------------------fin"
