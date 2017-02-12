@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd home1/irteamsu/steps
+cd ~/steps
 echo "---------content of this directory---------"
 ls -l
 echo "---------reset if build exist--------------"
@@ -8,14 +8,14 @@ ls -l
 
 echo "---------Now git clone---------------------"
 git clone https://github.com/joohee-jin/steps.git
-cd home1/irteamsu/steps
+cd ~/steps
 pwd
 mv steps build
 pwd
 
 echo "---------now directory---------------------"
 pwd
-cd home1/irteamsu/steps/build
+cd ~/steps/build
 ls -al
 
 echo "---------remove some file to build---------"
