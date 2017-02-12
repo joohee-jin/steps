@@ -20,7 +20,7 @@ cd ~/steps/build
 ls -al
 
 echo "-------------------------------------------remove some files to build"
-rm README.md .gitignore app.js
+rm README.md .gitignore app.js festival.csv
 rm -rf schellscript test .git shellscript
 #rm app.js
 
