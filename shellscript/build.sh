@@ -19,16 +19,16 @@ cd ~/steps/build
 ls -al
 
 echo "-------------------------------------------remove some files to build"
-rm README.md .gitignore
+rm README.md .gitignore app.js
 rm -rf schellscript test .git shellscript
 #rm app.js
 
 ls -al
 echo "-------------------------------------------npm install"
 npm install
-rm package.jsond
+rm package.json
 
 echo "-------------------------------------------send the data"
-rsync -av -e ssh ~/steps/festival.csv irteamsu@10.110.240.32:/home1/irteamsu
+rsync -av -e ssh ~/steps/festival.csv irteamsu@10.110.243.32:/home1/irteamsu
 
 echo "-------------------------------------------fin"
