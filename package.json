@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "body-parser": "~1.16.0",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
@@ -18,5 +20,8 @@
     "pm2": "^2.4.0",
     "serve-favicon": "~2.3.2",
     "tunnel-ssh": "^4.1.1"
+  },
+  "devDependencies": {
+    "should": "^11.2.0"
   }
 }

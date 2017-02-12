@@ -1,3 +1,4 @@
 cd ..
-echo "test connection"
+echo "connection test"
+npm install
 npm test
