@@ -29,6 +29,6 @@ npm install
 rm package.json
 
 echo "---------send directory 'build-------------"
-rsync -av -e ssh ~/steps/build irteamsu@10.110.241.148:home1/irteamsu
+rsync -av -e ssh ~/steps/build irteamsu@10.110.241.148:/home1/irteamsu
 
 echo "---------fin-------------------------------"
