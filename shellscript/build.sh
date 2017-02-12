@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd /Users/Jmousy/Project/steps
+cd ~/steps
 echo "---------content of this directory---------"
 ls -l
 echo "---------reset if build exist--------------"
