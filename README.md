@@ -3,17 +3,20 @@
 * **1.2 사용한 패키지** : Node, Mongo, Npm, Pm2 외 package.json 파일 참고
 * **1.3 데이터베이스** : MongoDB
 * **1.4 접근경로**
-        step 2 >
-        http://10.110.240.37:8081/step2 : output
-        http://10.110.240.37:8081/users     : URL check
-        step 4 >
-        http://10.110.240.37:8081/festival  : output
-        step 6 >
-        10.110.241.148/festival : Web1 check
-        10.110.243.28/festival  : Web2 check
-        10.113.229.118/festival : LB check
-        step 8 >
-        10.113.229.118/festival/chart   : output
+* 
+**step 2** 
+**    http://10.110.240.37:8081/step2 : output**
+**    http://10.110.240.37:8081/users     : URL check**
+**step 4 **
+**    http://10.110.240.37:8081/festival  : output**
+**step 6 **
+**    10.110.241.148/festival : Web1 check**
+**    10.110.243.28/festival  : Web2 check**
+**    10.113.229.118/festival : LB check**
+**step 8** 
+**    10.113.229.118/festival/chart   : output**
+* 
+
 
 ##2. 쉘 명령어
 * **2.1 Build**
