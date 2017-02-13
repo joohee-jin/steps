@@ -6,7 +6,7 @@
 ```
 step 2 >
    http://10.110.240.37:8081/step2 : output
-   http://10.110.240.37:8081/users     : URL check
+   http://10.110.240.37:8081/users : URL check
 step 4 >
    http://10.110.240.37:8081/festival  : output
 step 6 >
