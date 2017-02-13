@@ -31,16 +31,17 @@ $ sh test.sh
 * **2.3 Deploy** 
 ```
 $ sh deploy_steps.sh
+```
 *빌드와 테스트를 마친 build directory 를 서비스서버에 배포하고 웹 서버를 구동시킨다.*
 
-##3.디렉토리 및 파일 설명
-1. models
-2. public
-3. routes
-4. shellscript
-5. test
-6. views
-7. app.js
-8. server.js
-9. festival.csv
-10. package.json
+##3. 디렉토리 및 파일 설명
+* **1. models**
+* **2. public**
+* **3. routes**
+* **4. shellscript**
+* **5. test**
+* **6. views**
+* **7. app.js**
+* **8. server.js**
+* **9. festival.csv**
+* **10. package.json**
