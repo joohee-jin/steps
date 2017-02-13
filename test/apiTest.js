@@ -2,10 +2,10 @@
  * Created by Jmousy on 2017. 2. 10..
  */
 
-var chai = require('chai');
-var chaiHttp = require('chai-http');
-var should = chai.should();
-var server ='http://localhost:8081';
+let chai = require('chai');
+let chaiHttp = require('chai-http');
+let should = chai.should();
+let server ='10.110.240.37:80';
 
 chai.use(chaiHttp);
 
