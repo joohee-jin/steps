@@ -5,7 +5,7 @@
 let chai = require('chai');
 let chaiHttp = require('chai-http');
 let should = chai.should();
-let server ='10.110.240.37:80';
+let server ='10.110.240.37:80/festival';
 
 chai.use(chaiHttp);
 
