@@ -23,5 +23,36 @@ router.get('/info', function (req, res, next) {
     }
 );
 
+router.get('/chart', function (req, res, next) {
+    res.render('chart');
+    }
+);
+
+router.get('/getData', function (req, res, next) {
+
+    festivalSchema.aggregate([
+                {
+                    $group: {
+                        _id : '$행사내용',
+                        cnt : { $sum : 1}
+                    }
+                },
+                {
+                    $sort : {
+                        cnt : -1
+                    }
+                }
+            ], function (err, results) {
+                if (err) {
+                    console.error(err);
+                } else {
+                    res.json(results);
+                }
+            }
+        );
+
+    }
+);
+
 module.exports = router;
 

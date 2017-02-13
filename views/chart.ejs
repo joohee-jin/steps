@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>step4</title>
+
+
+    <script src="/angular/angular.js"></script>
+    <script src="/chart.js/dist/Chart.js"></script>
+    <script src="/angular-chart.js/dist/angular-chart.min.js"></script>
+    <script src="/angular-resource/angular-resource.js"></script>
+
+</head>
+
+
+<body ng-app="app">
+
+<div ng-controller="DoughnutCtrl">
+    <h12>2016년 12월 공연의 장르 비율 </h1>
+
+    <canvas id="doughnut" class="chart chart-doughnut"
+            chart-data="data" chart-labels="labels" >
+    </canvas>
+</div>
+
+
+</body>
+
+<script>
+    angular.module("app", ["chart.js", "ngResource"]).controller("DoughnutCtrl", function ($scope,$resource) {
+        var res = $resource("/festival/getData");
+
+        res.query(function (data) {
+            $scope.receive_data = data;
+
+            $scope.labels = [];
+            $scope.series = ['Count'];
+            $scope.data = [[]];
+
+            for (var i = 0 ; i < $scope.receive_data.length ; i++){
+                console.log("id : " + $scope.receive_data[i]._id + "  cnt : " + $scope.receive_data[i].cnt);
+                $scope.labels[i] = $scope.receive_data[i]._id;
+                $scope.data[i] = $scope.receive_data[i].cnt;
+            }
+        });
+    });
+
+</script>
+
+
+</html>
