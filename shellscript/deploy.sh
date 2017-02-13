@@ -18,8 +18,11 @@ ssh irteamsu@10.110.243.28 'cd ~'
 ssh irteamsu@10.110.243.28 'mv build deploy_steps'
 
 echo "-------------------------------------------Restart Service Server"
-ssh irteamsu@10.110.241.148 'sudo NODE_ENV=distribution pm2 restart server'
-ssh irteamsu@10.110.243.28 'sudo NODE_ENV=distribution pm2 restart server'
+ssh irteamsu@10.110.241.148 'sudo NODE_ENV=distribution pm2 delete server'
+ssh irteamsu@10.110.241.148 'sudo NODE_ENV=distribution pm2 start server'
+
+ssh irteamsu@10.110.243.28 'sudo NODE_ENV=distribution pm2 delete server'
+ssh irteamsu@10.110.243.28 'sudo NODE_ENV=distribution pm2 start server'
 
 echo "-------------------------------------------Deploy the data to DB Server"
 rsync -av -e ssh ~/steps/festival.csv irteamsu@10.110.243.32:/home1/irteamsu

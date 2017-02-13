@@ -7,9 +7,13 @@
     "test": "mocha --reporter spec"
   },
   "dependencies": {
+    "angular": "^1.6.2",
+    "angular-chart.js": "^1.1.1",
+    "angular-resource": "^1.6.2",
     "body-parser": "~1.16.0",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
+    "chart.js": "^2.5.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
     "ejs": "~2.5.5",

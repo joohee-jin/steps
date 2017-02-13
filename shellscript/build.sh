@@ -27,6 +27,5 @@ rm -rf schellscript test .git shellscript
 ls -al
 echo "-------------------------------------------npm install"
 npm install
-rm package.json
 
 echo "-------------------------------------------fin"
